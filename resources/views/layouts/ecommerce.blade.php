@@ -82,10 +82,10 @@
                                     </li>
                                     <hr>
                                     <li class="nav-item">
-                                        <a href="#" class="icons">
-                                            <i class="lnr lnr lnr-cart" aria-hidden="true"></i>
+                                        <a href="{{ route('front.list_cart') }}" class="icons">
+                                          <i class="lnr lnr lnr-cart"></i>
                                         </a>
-                                    </li>
+                                      </li>
                                     <hr>
                                 </ul>
                             </div>
@@ -240,6 +240,7 @@
     <script src="{{ asset('ecommerce/vendors/counter-up/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/flipclock/timer.js') }}"></script>
     <script src="{{ asset('ecommerce/vendors/counter-up/jquery.counterup.js') }}"></script>
+    @yield('js')
 </body>
 
 </html>
